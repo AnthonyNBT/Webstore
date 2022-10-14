@@ -13,9 +13,9 @@
       <div class="col-md-4 pt-5">
         <h2 class="h2 text-light border-bottom pb-3 border-light">Thể loại</h2>
         <ul class="list-unstyled text-light footer-link-list">
-          <li><a class="text-decoration-none" href="../store-app.php">Ứng dụng</a></li>
-          <li><a class="text-decoration-none" href="../store-movie.php">Phim</a></li>
-          <li><a class="text-decoration-none" href="../store-book.php">Sách</a></li>
+          <li><a class="text-decoration-none" href="../view/store-app.php">Ứng dụng</a></li>
+          <li><a class="text-decoration-none" href="../view/store-movie.php">Phim</a></li>
+          <li><a class="text-decoration-none" href="../view/store-book.php">Sách</a></li>
         </ul>
       </div>
 
