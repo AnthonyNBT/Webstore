@@ -1,0 +1,599 @@
+/*
+---------------------------------------------
+Table of contents
+------------------------------------------------
+1. Typography
+2. General
+3. Nav
+4. Hero Carousel
+5. Accordion
+6. Shop
+7. Product
+8. Carousel Hero
+9. Carousel Brand
+10. Services
+11. Contact map
+12. Footer
+13. Small devices (landscape phones, 576px and up)
+14. Medium devices (tablets, 768px and up)
+15. Large devices (desktops, 992px and up)
+16. Extra large devices (large desktops, 1200px and up)
+--------------------------------------------- */
+
+
+/* Typography */
+
+body,
+ul,
+li,
+p,
+a,
+label,
+input,
+div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px !important;
+    font-weight: 300 !important;
+}
+
+.h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px !important;
+    font-weight: 200 !important;
+}
+
+.h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px !important;
+    font-weight: 300;
+}
+
+.h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px !important;
+}
+
+
+/* General */
+
+.logo {
+    font-weight: 500 !important;
+}
+
+.text-warning {
+    color: #ede861 !important;
+}
+
+.text-muted {
+    color: #bcbcbc !important;
+}
+
+.text-success {
+    color: #59ab6e !important;
+}
+
+.text-light {
+    color: #cfd6e1 !important;
+}
+
+.bg-dark {
+    background-color: #212934 !important;
+}
+
+.bg-light {
+    background-color: #e9eef5 !important;
+}
+
+.bg-black {
+    background-color: #1d242d !important;
+}
+
+.bg-success {
+    background-color: #59ab6e !important;
+}
+
+.size-bg-success {
+    min-height: fit-content;
+}
+
+.btn-success {
+    background-color: #1e963c !important;
+    border-color: #56ae6c !important;
+}
+
+.btn-success:hover{
+    opacity: 0.8;
+}
+
+.btn-register{
+    text-align: center;
+    padding: 50px;
+}
+
+.btn-reset{
+    color: white;
+}
+.btn-reset:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/*button custom*/
+.btn-custom{
+    color: white;
+    background-color: #1e963c;
+    border-color: #56ae6c;
+    border-radius: 4px;
+}
+.btn-custom:hover{
+    opacity: 0.8;
+}
+/*end button custom*/
+
+/*button choose file custom*/
+.btn-choose-file{
+    color: transparent;
+}
+.btn-choose-file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.btn-choose-file::before{
+    content: 'Chọn một ảnh';
+    color: black;
+    display: inline-block;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 12px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+.btn-choose-file:hover::before {
+    border-color: black;
+}
+.btn-choose-file:active {
+    outline: 0;
+}
+.btn-choose-file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+/* end button choose file custom */
+
+.back-store a:hover {
+    color: red;
+}
+
+.pagination .page-link:hover {
+    color: #000;
+}
+
+.pagination .page-link:hover,
+.pagination .page-link.active {
+    background-color: #69bb7e;
+    color: #fff;
+}
+
+
+/* Nav */
+
+#nav_top {
+    min-height: 40px;
+}
+
+#nav_top * {
+    font-size: .9em !important;
+}
+
+#main_nav a {
+    color: #212934;
+}
+
+#main_nav a:hover {
+    color: #69bb7e;
+}
+
+#main_nav .navbar .nav-icon {
+    margin-right: 20px;
+}
+
+
+/* Hero Carousel */
+
+#store-carousel {
+    background: #efefef !important;
+}
+
+
+/* Accordion */
+
+.sidebar-accordion a {
+    color: #000;
+}
+
+.store-accordion a {
+    color: #000;
+}
+
+.store-accordion a:hover {
+    color: #333d4a;
+}
+
+
+/* Shop */
+
+.shop-top-menu a:hover {
+    color: #69bb7e !important;
+}
+
+
+/* Product */
+
+.product-wap {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.product-wap .product-color-dot.color-dot-red {
+    background: #f71515;
+}
+
+.product-wap .product-color-dot.color-dot-blue {
+    background: #6db4fe;
+}
+
+.product-wap .product-color-dot.color-dot-black {
+    background: #000000;
+}
+
+.product-wap .product-color-dot.color-dot-light {
+    background: #e0e0e0;
+}
+
+.product-wap .product-color-dot.color-dot-green {
+    background: #0bff7e;
+}
+
+.card.product-wap .card .product-overlay {
+    background: rgba(0, 0, 0, .2);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+
+.card.product-wap:hover .card .product-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card.product-wap a {
+    color: #000;
+}
+
+#carousel-related-product .slick-slide:focus {
+    outline: none !important;
+}
+
+#carousel-related-product .slick-dots li button:before {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/* Brand */
+
+.section-title {
+    margin-bottom: 80px;
+    font-family: "BwNistaInt-xBd";
+}
+
+
+/* Carousel Hero */
+
+#store-carousel .carousel-indicators li {
+    margin-top: -50px;
+    background-color: #59ab6e;
+}
+
+#store-carousel .carousel-control-next i,
+#store-carousel .carousel-control-prev i {
+    color: #59ab6e !important;
+    font-size: 2.8em !important;
+}
+
+
+/* Services */
+
+.services-icon-wap {
+    transition: .3s;
+}
+
+.services-icon-wap:hover,
+.services-icon-wap:hover i {
+    color: #fff;
+}
+
+.services-icon-wap:hover {
+    background: #69bb7e;
+}
+
+
+/* Contact map */
+
+.leaflet-control a,
+.leaflet-control {
+    font-size: 10px !important;
+}
+
+
+/* Form */
+
+.form-control {
+    border: 1px solid #e8e8e8;
+}
+
+.form-control::placeholder {
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #c7c7c7;
+    height: 40px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #69bb7e;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.form-login{
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgb(13, 24, 13);
+    background-color: #0a3814;
+    opacity: 0.96;
+    margin: auto;   
+    color: #e9eef5;
+    padding: 40px 40px;
+    margin: auto;
+}
+
+.form-login input[type="email"] {
+    background-color: #b2dfad;
+}
+
+
+.form-login input[type="password"]{
+    background-color: #b2dfad;
+}
+
+.form-login input[type="date"]{
+    background-color: #b2dfad;
+}
+
+.form-login select{
+    background-color: #b2dfad;
+}
+
+.background-login{
+    background-image: url(./Images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.background-home {
+    background-image: url(./Images/background-home.png);
+}
+
+.background-form {
+    background-image: url(./images/background-form.png);
+}
+
+.live-background {
+    background-image: url(./images/history.gif);
+}
+
+.background-leaf {
+    background-image: url(./images/background-leaf.png);
+}
+
+.background-table {
+    background-image: url(./images/background-table.png);
+}
+
+.background-bee{
+    background-image: url(./images/background-bee.png);
+}
+
+.background-bee{
+    background-image: url(./images/background-bee.png);
+}
+.background-two{
+    background-image: url("./images/background-two.png");
+    background-size: contain;
+}
+.background-firework{
+    background-image: url("./images/store-studio.gif");
+}
+.background-admin-contact{
+    background-image: url("./images/admin-contact.gif");
+    background-size: contain;
+}
+
+.background-admin-report{
+    background-image: url("./images/admin-report.jpg");
+}
+
+.img-coin img {
+    max-width: 12rem;
+}
+
+.table-coin {
+    max-width: 70rem;
+    margin: auto;
+}
+
+/*account*/
+.account-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.account-col{
+    width: 300px;
+}
+
+.account-img{
+    width: 140px;
+}
+
+.account-img-custom{
+    height: 140px;
+    background-color: rgb(233, 236, 239);
+}
+
+
+.account-img-title{
+    color: rgb(166, 168, 170);
+    font: bold 8pt Arial;
+}
+.dev-img{
+    width: 180px;
+}
+
+.dev-img-custom{
+    height: 180px;
+    background-color: rgb(233, 236, 239);
+}
+
+.canvas-custom{
+    width:100%;
+    max-width:700px;
+}
+
+/*/end account*/
+
+/* Footer */
+
+#store_footer a {
+    color: #dcdde1;
+}
+
+#store_footer a:hover {
+    color: #68bb7d;
+}
+
+#store_footer ul.footer-link-list li {
+    padding-top: 10px;
+}
+
+#store_footer ul.footer-icons li {
+    width: 2.6em;
+    height: 2.6em;
+    line-height: 2.6em;
+}
+
+#store_footer ul.footer-icons li:hover {
+    background-color: #cfd6e1;
+    transition: .5s;
+}
+
+#store_footer ul.footer-icons li:hover i {
+    color: #212934;
+    transition: .5s;
+}
+
+#store_footer .border-light {
+    border-color: #2d343f !important;
+}
+
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+.product-wap .h3,
+.product-wap li,
+.product-wap i,
+.product-wap p {
+    font-size: 12px !important;
+}
+
+.product-wap .product-color-dot {
+    width: 6px;
+    height: 6px;
+}
+
+@media (min-width: 576px) {
+    .tempaltemo-carousel .h1 {
+        font-size: 1em !important;
+    }
+}
+
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    #main_nav .navbar-nav {
+        max-width: 450px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    #main_nav .navbar-nav {
+        max-width: 550px;
+    }
+    #store-carousel .carousel-item {
+        min-height: 30rem !important;
+    }
+    .product-wap .h3,
+    .product-wap li,
+    .product-wap i,
+    .product-wap p {
+        font-size: 16px !important;
+    }
+    .product-wap .product-color-dot {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}
+
+
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.image .img{
+    position:absolute;
+}
+
+.image2{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:50%;
+}
+.image2 .img2{
+    position:absolute;
+}
